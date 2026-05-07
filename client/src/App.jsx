@@ -5,6 +5,7 @@ import Register from "./pages/Register.jsx";
 import ForgotPassword from "./pages/ForgotPassword.jsx";
 import VerifyEmail from "./pages/VerifyEmail.jsx";
 import ResetPassword from "./pages/ResetPAssword.jsx";
+import AdminApiKeys from "./pages/AdminApiKeys.jsx";
 import { useAuth } from "./context/AuthContext.jsx";
 
 // Dashboard placeholder
@@ -20,7 +21,12 @@ const Dashboard = () => {
     <div>
       <h1>Dashboard</h1>
       <p>Logged in as: {user?.email}</p>
-      <button onClick={handleLogout}>Logout</button>
+      <button onClick={() => navigate('/admin/api-keys')}>
+        Manage API Keys
+      </button>
+      <button onClick={() => { logout(); navigate('/login'); }}>
+        Logout
+      </button>
     </div>
   );
 };
@@ -38,6 +44,14 @@ function App() {
         element={
           <ProtectedRoute>
             <Dashboard />
+          </ProtectedRoute>
+        }
+      />
+      <Route
+        path="/admin/api-keys"
+        element={
+          <ProtectedRoute>
+            <AdminApiKeys />
           </ProtectedRoute>
         }
       />
