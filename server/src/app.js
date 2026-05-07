@@ -19,16 +19,6 @@ app.get("/api/health", (req, res) => res.json({ status: "ok" }));
 
 app.use("/api/auth", authRoutes); // auth routes
 
-// Test protected route — delete this after testing
-app.get('/api/me', requireAuth, async (req, res, next) => {
-  try {
-    const user = await User.findUserById(req.user.userId);
-    if (!user) return res.status(404).json({ message: 'User not found' });
-    res.json({ id: user.id, email: user.email });
-  } catch (error) {
-    next(error);
-  }
-});
 
 app.use(errorHandler);
 export default app;
