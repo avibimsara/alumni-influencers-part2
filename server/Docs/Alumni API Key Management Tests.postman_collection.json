@@ -1,0 +1,105 @@
+{
+  "info": {
+    "_postman_id": "610ba230-b903-49b0-9f8a-5c4112a11972",
+    "name": "Alumni API Key Management Tests",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "28960990",
+    "_collection_link": "https://go.postman.co/collection/28960990-610ba230-b903-49b0-9f8a-5c4112a11972?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Login",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": ""
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create a key",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": ""
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Dashboard key on alumni endpoint",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": ""
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Dashboard key on AR-only endpoint",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": ""
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "AR key on analytics endpoint",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": ""
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Invalid key",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": ""
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Check usage logs",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": ""
+        }
+      },
+      "response": []
+    }
+  ],
+  "variable": [
+    {
+      "key": "jwt_token",
+      "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjQsImlhdCI6MTc3ODE3NzA1NSwiZXhwIjoxNzc4MTgwNjU1fQ.nuzdO978eJuQTGHWBZwuV98VQbFIkbC_SQSkQ7bN_Rk",
+      "type": "string"
+    },
+    {
+      "key": "dashboard_key",
+      "value": "ak_2609bfe83667807a7d5ed5b6ed70dacb",
+      "type": "string"
+    },
+    {
+      "key": "ar_key",
+      "value": "ak_e38d19373cda70fb78e0ceee078e1e13",
+      "type": "string"
+    }
+  ]
+}
